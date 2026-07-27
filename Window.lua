@@ -406,12 +406,12 @@ function Library:CreateWindow(cfg)
         return b
     end
 
-    local ToggleBtn = HBtn(-182, "💤")
-    local MinBtn    = HBtn(-148, "−", Library.Theme.Warning)
-    local ThemeBtn  = HBtn(-114, "⚙")
-    local RainBtn   = HBtn(-80, "★")
-    local PanicBtn  = HBtn(-46, "!", Color3.fromRGB(255, 80, 80))
-    local CloseBtn  = HBtn(-12, "×", Library.Theme.Danger)
+        local ToggleBtn = HBtn(-182, "💤")
+        local MinBtn    = HBtn(-148, "−", Library.Theme.Warning)
+        local ThemeBtn  = HBtn(-114, "⚙")
+        local RainBtn   = HBtn(-80,  "★")
+        local PanicBtn  = HBtn(-46,  "!", Color3.fromRGB(255, 80, 80))
+        local CloseBtn  = HBtn(-46 + 34, "×", Library.Theme.Danger) -- hoặc ghi trực tiếp -12 nếu HBtn dùng AnchorPoint đúng
 
     
     local Left = Create("Frame", {
